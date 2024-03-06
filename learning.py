@@ -7,32 +7,57 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     menu_items={'About': "Learn to be More Forgiving in Less Than Two Hours!"}
 )
+
+
+st.image('VETERAN_Lab_Logo.png', width=500, use_column_width="never", clamp=False, channels="RGB", output_format="auto")
+
+
 st.title('Developing Moral Resilience through Forgiveness')
 st.header(
-    """## :blue[Learn to be More Forgiving in Less Than Two Hours]
+    """ :blue[Learn to be More Forgiving in Less Than Two Hours]
     """
     )
 st.subheader(
-    """Self-Directed Learning... 
-    An Exercises to Build Forgiveness
+    """Self-Directed Learning 
+    Exercises to Build Forgiveness
     """
 )
-st.subheader(
-    """ :orange[Justin McDaniel, PhD]
-        Southern Illinois University
+st.markdown(
+    """ 
+    <p style="text-align: center;"><span style="color:Orange;font-weight:bold;">Justin McDaniel, PhD</span>
+    <p style="text-align: center;"><span style="color:violet;font-weight:bold;">Southern Illinois University</span>
 
-    """
+    """, unsafe_allow_html=True
 )
 
 st.divider()
-st.header(
-        """ :blue[lesson 1]
+st.markdown(
+        """ 
+        ## :blue[Lesson 1]
         What is this workbook all about?
-        Introduction to the BREACH/PREACH Forgiveness Workbook
-       """
+        
+        <p style="text-align: center;">Introduction to the <span style="color:green;font-weight:bold;">BREACH/PREACH</span> Forgiveness Workbook
+       """, unsafe_allow_html=True
 )
+
+
+acronyms = [
+    "B/P - Betrayal or Perpetration-Based Moral Injury Knowledge",
+    "R - Recall the Hurt",
+    "E - Empathizing with the Wrongdoer or Yourself",
+    "A - Altruistic Gift of Forgiveness",
+    "C - Committing to the Forgiveness You've Experienced",
+    "H - Holding onto Forgiveness in Times of Doubt"
+]
+
+for item in acronyms:
+    st.markdown(f"<b>{item[0]}</b>{item[1:]}", unsafe_allow_html=True)
+
+
+
 st.write(
-    """Within a span of less than two hours, engage in practical exercises aimed at fostering forgiveness, which can aid in reconciling choices and actions that conflict with one's values. Forgiveness is a voluntary act; no one is obligated to forgive.
+    """
+Within a span of less than two hours, engage in practical exercises aimed at fostering forgiveness, which can aid in reconciling choices and actions that conflict with one's values. Forgiveness is a voluntary act; no one is obligated to forgive.
 
 Contained within this guide are twelve ten-minute exercises, totaling approximately two hours for completion. These exercises progressively build upon one another, so it's advised not to skip any. Each exercise is brief, allowing for easy integration into your daily routine. By participating in these exercises, you have the opportunity to develop what we’ll call “moral resilience.”
 
@@ -119,7 +144,7 @@ Given that you've chosen to confront this significant hurt, your current rating 
 
 with st.form("emotions_1.4"):
     col1, col2 = st.columns(2)
-    col1.write(". If you find yourself engulfed in intense negative emotions without a hint of forgiveness, assign yourself a rating of 0. If you harbor no negativity whatsoever towards yourself or the individual, give yourself a score of 10.")
+    col1.write("If you find yourself engulfed in intense negative emotions without a hint of forgiveness, assign yourself a rating of 0. If you harbor no negativity whatsoever towards yourself or the individual, give yourself a score of 10.")
     role_res = col2.radio('Pick your rating here:', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], index=None, horizontal=True, key=1.4)
 
     submitted = st.form_submit_button("Submit")
@@ -130,9 +155,13 @@ st.header(
        """
 )
 st.write(
-    """Once you complete a lesson, you will be presented with a review of material and a small test to ensure that you are engaging with the context carefully. In lesson one, you learned a lot about moral injury and forgiveness as a way to build moral resilience. You’ve learned that 
+    """Once you complete a lesson, you will be presented with a review of material and a small test to ensure that you are engaging with the context carefully. 
+    In lesson one, you learned a lot about moral injury and forgiveness as a way to build moral resilience. You’ve learned that 
+
 •	Moral injury refers to the psychological and emotional distress experienced when an individual witnesses or participates in actions that violate their moral or ethical beliefs, especially in the context of military service and combat.
+
 •	Forgiveness may be classified into two types: forgiveness as a general practice and using forgiveness to reconcile a particular hurt.
+
 •	Forgiving a hurt may take place in two ways.  
 
 """
@@ -630,9 +659,13 @@ st.header(
 )
 st.write(
     """Throughout this lesson, you've acquired insights that will aid you in the journey of forgiveness. You've discovered that:
-•	There are betrayal and perpetration based moral injuries, both of which carry significant hurt. 
+
+•	There are betrayal and perpetration based moral injuries, both of which carry significant hurt.
+
 •	You have the power to relinquish the burden of hurt. It can be as straightforward as unclenching your fists and releasing a tightly held grudge.
+
 •	Opting to forgive can offer immediate relief, providing a sense of lightness and liberation.
+
 •	However, despite making the decision to forgive, you may still find yourself grappling with feelings of resentment, bitterness, hostility, hatred, anger, and anxiety. While these emotions can be overcome, they often linger and resurface intermittently, proving to be unexpectedly potent.
 """)
 with st.form("Assessment"):
@@ -663,22 +696,31 @@ st.header(
         Role Play
        """
 )
-st.write(
+st.markdown(
     """Write a hypothetical conversation between you and a trusted counselor. What do you say? 
 
-Example:
-Counselor: 	It seems like there's a significant burden you're carrying related to a specific incident. Can you tell me more about what happened?
-Me:	Yeah, during a mission, we were targeting an enemy, but in the chaos, an innocent civilian was unintentionally killed. It's been haunting me ever since.
-Counselor: 	That must have been an incredibly distressing situation to find yourself in. It sounds like you were faced with a difficult choice and the consequences are weighing heavily on you.
-Me:	Exactly. I know we were trying to take down a dangerous threat, but I can't shake off the fact that an innocent person lost their life because of our actions.
-Counselor: 	It's understandable to feel conflicted about this experience. It's not uncommon for service members to grapple with moral dilemmas in the midst of combat, especially when trying to navigate between protecting others and accomplishing the mission.
-Me:	I keep questioning if there was something else I could have done to prevent it.
-Counselor:	It's natural to reflect on what could have been done differently, but it's important to remember that you were operating under intense pressure and in a complex situation. Sometimes, despite our best efforts, tragic outcomes occur in order to accomplish a greater good.
-Me:	I just can't shake off this feeling of responsibility. I don’t think I can forgive myself.
-Counselor:	Forgiveness can be a complex and challenging process, especially in situations like this. It may take time and effort, but it's possible to find a sense of peace and acceptance by making a decision to forgive.
+<span style="color:orange;font-weight:bold;">Example</span>:
+
+<span style="font-weight:bold;">Counselor</span>: 	It seems like there's a significant burden you're carrying related to a specific incident. Can you tell me more about what happened?
+
+<span style="font-weight:bold;">Me</span>:	Yeah, during a mission, we were targeting an enemy, but in the chaos, an innocent civilian was unintentionally killed. It's been haunting me ever since.
+
+<span style="font-weight:bold;">Counselor</span>: 	That must have been an incredibly distressing situation to find yourself in. It sounds like you were faced with a difficult choice and the consequences are weighing heavily on you.
+
+<span style="font-weight:bold;">Me</span>:	Exactly. I know we were trying to take down a dangerous threat, but I can't shake off the fact that an innocent person lost their life because of our actions.
+
+<span style="font-weight:bold;">Counselor</span>: 	It's understandable to feel conflicted about this experience. It's not uncommon for service members to grapple with moral dilemmas in the midst of combat, especially when trying to navigate between protecting others and accomplishing the mission.
+
+<span style="font-weight:bold;">Me</span>:	I keep questioning if there was something else I could have done to prevent it.
+
+<span style="font-weight:bold;">Counselor</span>:	It's natural to reflect on what could have been done differently, but it's important to remember that you were operating under intense pressure and in a complex situation. Sometimes, despite our best efforts, tragic outcomes occur in order to accomplish a greater good.
+
+<span style="font-weight:bold;">Me</span>:	I just can't shake off this feeling of responsibility. I don’t think I can forgive myself.
+
+<span style="font-weight:bold;">Counselor</span>:	Forgiveness can be a complex and challenging process, especially in situations like this. It may take time and effort, but it's possible to find a sense of peace and acceptance by making a decision to forgive.
 It's your opportunity now. Aim for at least three substantial interactions between yourself and the therapist. Whether this dialogue occurs in reality is irrelevant, but striving for accuracy remains beneficial. The crucial aspect is comprehending the scenario's context and maintaining objectivity regarding the events.
 
-"""
+""", unsafe_allow_html=True
 )
 with st.form("role"):
     st.text_area("Type your dialogue below:", max_chars=5000)
@@ -737,15 +779,14 @@ st.write(
 
 Compassion involves recognizing that someone may be in need of assistance, even if they aren't actively seeking it or willing to accept it. However, you can perform a selfless deed by envisioning a compassionate response, even if you or the individual doesn't seem deserving of it.
 
-How much compassion do you feel for yourself or the person who hurt you? [Designate your present feelings by marking the correct amount in bold font or with a circle]
-1.	None
-2.	A little
-3.	A moderate amount
-4.	A lot
-
 """
 )
 with st.form("compassion"):
+    col1, col2 = st.columns(2)
+    col1.write("How much compassion do you feel for yourself or the person who hurt you? [Designate your present feelings by selecting the correct one]")
+    role_res = col2.selectbox("", ('None', 'A little', 'A moderate amount', 'A lot'), index=None, placeholder='select your answer', key=27.0)
+
+
     col1, col2 = st.columns(2)
     col1.write("What could you do to feel more compassion toward yourself or that person? ")
     compassions = col2.text_area("", placeholder="Type your answer below", key=27, max_chars=2000)
@@ -1023,8 +1064,11 @@ st.header(
 )
 st.write(
     """If you haven't achieved complete emotional forgiveness, consider revisiting the steps.  You may want to revisit Lessons 5 and 6, focusing on empathizing with yourself or the wrongdoer and cultivating a selfless or merciful form of love. These emotions can effectively replace feelings of unforgiveness, much like empathy and compassion.  In cases where you and the wrongdoer have a history of mutual hurt, whether through significant incidents or numerous small ones, you don't need to recall every instance of harm to forgive effectively. You can forgive by following three steps:
+
 •	Select two or three of the most significant acts of hurt, which will symbolize all the harm inflicted.
+
 •	Address each of these acts individually until forgiveness is achieved.
+
 •	Eventually, you'll reach a point where you've forgiven enough acts, leading to complete forgiveness of self or others.
 """
 )
@@ -1035,9 +1079,13 @@ st.header(
        """
 )
 st.write(
-    """•	With an ink pen, write a short explanation of the hurt, or even just the word “HURT,” on your hand.
-•	Next, go to a bathroom and wash it off with soap and warm water.
-•	Were you able to remove all of the ink?
+    """
+    •	With an ink pen, write a short explanation of the hurt, or even just the word “HURT,” on your hand.
+
+    •	Next, go to a bathroom and wash it off with soap and warm water.
+
+    •	Were you able to remove all of the ink?
+
 Lesson: We can go through the BREACH/PREACH forgiveness steps once, which may not completely eliminate our negative emotions, but it can alleviate them. With each repetition, the weight of these unforgiving feelings gradually lessens until we are liberated from them entirely.
 
 """
@@ -1131,10 +1179,15 @@ st.write(
     """In this session, you've acquired valuable insights to aid in the forgiveness process. You've discovered that:
 
 •	Journaling about your experiences can lead to improvement.
+
 •	Completing a forgiveness certificate, detailing the level of forgiveness you've attained, can reinforce your progress and serve as a reminder during moments of doubt, which are inevitable in matters of emotions.
-•	If your emotional forgiveness remains incomplete, you have options:
+
+If your emotional forgiveness remains incomplete, you have options:
+
 o	Revisit Lessons #__ and #__. (If you've forgotten, consult Exercise 7.3.)
+
 o	Utilize two alternative emotions to replace unforgiving feelings: Sympathy and Letting go.
+
 •	You've also learned that forgiving every minor offense is not necessary to forgive the individual. Addressing two or three significant transgressions is typically sufficient to foster a sense of forgiveness.
 
 """
@@ -1287,7 +1340,7 @@ st.header(
 with st.form("Dedicate"):
     col1, col2 = st.columns(2)
     col1.write("Why do you want to be a more forgiving person? ")
-    role_res = col2.write("List as many reasons as you can here")
+    role_res = col2.text_area("", placeholder="List as many reasons as you can here", key=9.11, max_chars=2000)
     
     submitted = st.form_submit_button("submit")
 
@@ -1304,7 +1357,7 @@ st.write(
 with st.form("hurts"):
     col1, col2 = st.columns(2)
     col1.write("Describe your wounds:")
-    role_res = col2.text_area("List the top five significant ones")
+    role_res = col2.text_area("", placeholder="List the top five significant ones", key=9.21, max_chars=2000)
     
     st.write("By deciding to forgive and applying BREACH/PREACH forgiveness to each wound, you may become a more forgiving person.")
 
@@ -1493,7 +1546,10 @@ with st.form("someone"):
     col1.write("When you feel hurt by someone's wrongdoing or experience a perpetration-type moral injury, do you typically seek out social support, or do you tend to handle it alone? Is there someone you trust enough to confide in about your genuine intention to cultivate greater forgiveness?")
     role_res = col2.text_area("", placeholder="Write that person’s, or persons’, name(s) here", key=85, max_chars=2000)
 
-    st.write("What are some reasons that you talk to that person? How do they typically respond to you? (Can you give others or yourself the same thing that person gives to you?)")
+
+    col1, col2 = st.columns(2)
+    col1.write("What are some reasons that you talk to that person? How do they typically respond to you? (Can you give others or yourself the same thing that person gives to you?)")
+    role_res = col2.text_area("", placeholder="Type here", key=85.1, max_chars=2000)
 
     submitted = st.form_submit_button("submit")
 
@@ -1538,13 +1594,13 @@ st.write(
 
 st.header(
         """ :blue[Exercise 10.10]
-        Step 12: Start a Campaign to Feel Warmth toward Yourself and/or “Enemies”
+        Knowledge Assessment
 """
 )
 st.write("Throughout this lesson, you've focused on forgiving a specific hurt. Across Lessons 1 to 8, you made strides in forgiving this hurt to varying degrees. In Lessons 9 and 10, you aimed to further develop your capacity for forgiveness. Now, with the foundation of having forgiven one hurt, you can extend the BREACH/PREACH forgiveness method to address other hurts. This process will underscore your practice of forgiveness and highlight your growth as a more forgiving individual.")
 with st.form("know_10"):
     col1, col2 = st.columns(2)
-    col1.write("Think back through this workbook. Write about the most important thing you have learned so far")
+    col1.write("Think back through this workbook. Write about the most important thing you have learned so far.")
     role_res = col2.text_area("", placeholder="Type here", key=87, max_chars=2000)
 
     submitted = st.form_submit_button("submit")
@@ -1571,9 +1627,12 @@ st.header(
 st.write(
     """Imagine a pencil with an eraser. Consider the following lesson for your life. 
 
-•	A pencil, though short-lived, possesses the capacity to leave a lasting impression, much like you. 
+•	A pencil, though short-lived, possesses the capacity to leave a lasting impression, much like you.
+
 •	Unlike a pen, it allows for correction of mistakes through dedicated effort, sometimes requiring the unconventional act of standing it on its eraser. In a world that emphasizes the pursuit of power, prioritize love; opt for forgiveness over revenge and/or self-hate, for therein lies true strength.
-•	Similar to you, the essence of the pencil, not its outward appearance, determines its ability to make a mark. 
+
+•	Similar to you, the essence of the pencil, not its outward appearance, determines its ability to make a mark.
+
 •	Regular sharpening is essential for its effectiveness, so embrace the process of honing yourself, as the challenges you face often serve as opportunities for growth and refinement.
 """
 )
@@ -1604,11 +1663,17 @@ st.header(
 )
 st.write(
     """Over 3000 scholarly papers have examined the concept of forgiveness. What have researchers discovered? Learn these lessons.
+
 •	Every transgression holds the potential for forgiveness, though significant wrongs may necessitate a more extensive process.
+
 •	With unwavering dedication, any offense can be forgiven.
+
 •	Forgiveness often demands patience and persistent effort, especially when addressing particular grievances.
+
 •	Embracing forgiveness fosters inner peace, psychological equilibrium, and enhanced physical well-being.
+
 •	Cultivating forgiveness facilitates the cultivation of healthier, more fulfilling relationships and a view of ones self.
+
 •	Engaging in forgiveness practices enriches one's spiritual journey.
 
 """
@@ -1673,13 +1738,21 @@ st.header(
 """
 )
 st.write(
-    """In lesson 11, you are beginning to experience the internalization of forgiveness. Check your knowledge: imagine that you had to give a speech to a class of 13- to 15-year old students. Can you explain the following?
+    """
+    In lesson 11, you are beginning to experience the internalization of forgiveness. Check your knowledge: imagine that you had to give a speech to a class of 13- to 15-year old students. Can you explain the following?
+
 •	The advantages of forgiving
+
 •	What an injustice gap is and how an apology from the wrongdoer makes the gap smaller and forgiveness likelier
+
 •	What decisional forgiveness is
+
 •	What emotional forgiveness is
+
 •	What the 6 steps to BREACH/PREACH forgiveness are
+
 •	An illustration from your life of how you used BREACH/PREACH forgiveness to forgive something.
+
 •	An illustration from someone else’s life that inspires people to forgive.
 
 """
@@ -1757,7 +1830,7 @@ st.header(
 st.write(" :blue[About how long, in hours and minutes, would you estimate that you spent on this workbook from start to finish?]")
 with st.form("Time_used"):
     time = st.time_input("Time:")
-    signature = st.text_input("Your Signature:")
+    signature = st.text_input("Your Signature:(Name)")
 
     st.markdown(f"I AFFIRM THAT IT TOOK ME ABOUT **{time}**")
     st.markdown(f"SIGNED **{signature}**")
