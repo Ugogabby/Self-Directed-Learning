@@ -9,9 +9,6 @@ st.set_page_config(
 )
 
 
-st.image('VETERAN_Lab_Logo.png', width=300, use_column_width="never", clamp=False, channels="RGB", output_format="auto")
-
-
 st.title('Developing Moral Resilience through Forgiveness')
 st.header(
     """ :blue[Learn to be More Forgiving in Less Than Two Hours]
