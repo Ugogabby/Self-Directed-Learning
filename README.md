@@ -1,4 +1,4 @@
-_[Introduction to the BREACH/PREACH Forgiveness Workbook]
+_ [Introduction to the BREACH/PREACH Forgiveness Workbook]
 
 ---
 
