@@ -1,4 +1,4 @@
-_ [Introduction to the BREACH/PREACH Forgiveness Workbook]
+# Introduction to the BREACH/PREACH Forgiveness Workbook
 
 ---
 
@@ -9,3 +9,4 @@ Contained within this guide are twelve ten-minute exercises, totaling approximat
 Forgiveness can yield swift and profound results, potentially altering your life's trajectory. However, more often, it instigates subtle yet significant shifts in direction. These changes, though seemingly minor, lead you toward a different destination than your current path. Whether a sudden transformation or gradual evolution, forgiveness guides you toward a brighter future, helping you come to terms with choices and actions that you have made that may conflict with your value system.
 
 Crucially, forgiveness does not entail forgetting or denying past hurts. Rather, it involves replacing animosity with benevolence towards the wrongdoer or yourself. Furthermore, forgiveness doesn't preclude seeking justice; it entails desiring the offender's ultimate well-being while pursuing a fair resolution. Embracing forgiveness can be a transformative and liberating experience. Let's embark on this journey of forgiveness together.
+***
