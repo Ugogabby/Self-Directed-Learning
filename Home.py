@@ -31,6 +31,9 @@ st.markdown(
     <p style="text-align: center;"><span style="color:Orange;font-weight:bold;">Justin McDaniel, PhD</span>
     <p style="text-align: center;"><span style="color:violet;font-weight:bold;">Southern Illinois University</span>
 
+    <p style="text-align: center;"><span style="color:Orange;font-weight:bold;">Ugochukwu Ezigbo, MHA</span>
+    <p style="text-align: center;"><span style="color:violet;font-weight:bold;">Research Assistant, Southern Illinois University</span>
+
     """, unsafe_allow_html=True
 )
 
